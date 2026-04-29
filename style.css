@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Gladi';
+  src: url('fonts/Gladifilthefte.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +30,8 @@ header {
   background: #111;
   color: white;
   padding: 1rem 2rem;
+  font-family: 'Gladi', Arial, sans-serif;
+  font-size: 2rem;
 }
 
 footer {
@@ -30,6 +39,26 @@ footer {
   padding: 1.5rem;
   background: #111;
   color: white;
+  font-family: 'Gladi', Arial, sans-serif;
+  font-size: 1.25rem;
+}
+
+p {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p strong {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+.long p {
+  text-indent: 20px;
+}
+
+.page-content h2 {
+  font-family: 'Gladi', Arial, sans-serif;
+  font-size: 3rem;
 }
 
 .navbar {
@@ -66,6 +95,7 @@ footer {
 .hero h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  font-family: 'Gladi', Arial, sans-serif;
 }
 
 .btn {
@@ -76,12 +106,19 @@ footer {
   color: white;
   text-decoration: none;
   border-radius: 8px;
+  font-family: 'Gladi', Arial, sans-serif;
+  font-size: 2rem;
 }
 
 .page-content {
   max-width: 1100px;
   margin: auto;
   padding: 3rem 2rem;
+}
+
+.page-content h3 {
+  font-family: 'Gladi', Arial, sans-serif;
+  font-size: 2rem;
 }
 
 .grid {
@@ -94,6 +131,16 @@ footer {
 .card {
   background: white;
   padding: 1.5rem;
+}
+
+.card h2 {
+  font-family: 'Gladi', Arial, sans-serif;
+  font-size: 2rem;
+}
+
+.card h3 {
+  font-family: 'Gladi', Arial, sans-serif;
+  font-size: 2rem;
 }
 
 .project-link {
@@ -131,4 +178,54 @@ footer {
 .page-content p {
   margin-bottom: 1.25rem;
   line-height: 1.7;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.75);
+}
+
+.modal-content {
+  background: white;
+  width: 90%;
+  max-width: 900px;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.modal video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.gallery img {
+  width: 250px;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 10px;
 }
