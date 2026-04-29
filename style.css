@@ -9,12 +9,27 @@ body {
   line-height: 1.6;
   background: #f4f4f4;
   color: #222;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 header {
   background: #111;
   color: white;
   padding: 1rem 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #111;
+  color: white;
 }
 
 .navbar {
@@ -79,4 +94,41 @@ header {
 .card {
   background: white;
   padding: 1.5rem;
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.project-link:hover {
+  transform: translateY(-5px);
+  transition: 0.2s ease;
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+}
+
+.logo:hover {
+  color: #00bcd4;
+}
+
+.bio-pic {
+  float: left;
+  max-width: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 0 20px 15px 0;
+}
+
+.page-content p {
+  margin-bottom: 1rem;
+}
+
+.page-content p {
+  margin-bottom: 1.25rem;
+  line-height: 1.7;
 }
